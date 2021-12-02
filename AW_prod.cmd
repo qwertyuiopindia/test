@@ -1,0 +1,1 @@
+powerShell -windowstyle hidden C:\ProgramData\script.ps1
