@@ -1,1 +1,1 @@
-start powershell -windowstyle hidden "cat -raw C:\Users\Simon\Desktop\Daily.ps1 | invoke-expression"
+start powershell  -windowstyle hidden "cat -raw C:\ProgramData\script.ps1 | invoke-expression"
