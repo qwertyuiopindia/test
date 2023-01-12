@@ -16,3 +16,4 @@ $file = "C:\ProgramData\AW_prod.cmd"
 $exec = New-Object -com shell.application
 $exec.shellexecute($file)
 exit
+
